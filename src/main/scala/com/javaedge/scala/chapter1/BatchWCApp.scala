@@ -1,4 +1,4 @@
-package com.javaedge.scala.chapter2
+package com.javaedge.scala.chapter1
 
 import org.apache.flink.api.scala.ExecutionEnvironment
 
@@ -7,7 +7,7 @@ import org.apache.flink.api.scala.ExecutionEnvironment
   * @date 2019-05-04
   *
   */
-object BatchWCScalaApp {
+object BatchWCApp {
 
   def main(args: Array[String]): Unit = {
 
@@ -17,7 +17,6 @@ object BatchWCScalaApp {
 
     val text = env.readTextFile(input)
 
-//    text.print()
     // 引入隐式转换
     import org.apache.flink.api.scala._
     text.flatMap (_.toLowerCase.split("\t"))

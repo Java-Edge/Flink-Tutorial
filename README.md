@@ -1,25 +1,6 @@
-# 0 Flink 从入门到实战
-#### 新一代风靡全球的大数据计算引擎 
+# 0 Flink 从入门到实战 - Scala版本
 
-#### 阿里巴巴等众多公司引领的Flink 风潮，让会Flink 的人才供不应求，抢手之极
-
-# 1 Java/Scala 双语言教程，为你带来不一样的Flink教程
-Flink 正处于升温期，抢先一步掌握它，你就会在大数据行业抢先崛起
-
-## 1.1 Flink零基础 带你从入门到实战
-不怕你毫无Flink基础，体系化的教程内容
-让你循序渐进，入门企业级开发
-  
-## 1.2 紧密结合Flink官网内容讲解
-拒绝二手货，紧密结合官网，让你学到原汁原味的一手内容
- 
-## 1.3 带着行业经验讲解技术知识
-真正从实践角度教你能应用于实践的知识
-  
-## 1.4 Scala／Java双语言教学讲解
-采用双语言讲解Flink核心知识，让你学习更加轻松
-
-# 2 Java／Scala双语言实操实练，带你全面掌握Flink核心知识
+# 1 核心知识点
 ![](https://upload-images.jianshu.io/upload_images/16782311-dc4156dc0a34d557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 编程模型及核心概念
 Flink中的DataSet & DataStream
@@ -98,12 +79,11 @@ Flink常见的监控方式
 
 常见的Flink调优策略
 
-# 3 实战项目：基于Flink的互联网直播平台日志分析
-#### 掌握了Flink 核心知识后，实战自然必不可少，逐行代码带你实战
+# 2 实战项目：基于Flink的互联网直播平台日志分析
 #### 互联网直播平台日志分析（以Scala语言开发）
 ![](https://upload-images.jianshu.io/upload_images/16782311-ff3bd3a8d89089ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-# 4 Flink的火爆不是随便说说，以下知名公司都在使用Flink
+# 3 以下知名公司都在使用Flink
 ![](https://upload-images.jianshu.io/upload_images/16782311-9447a7c96178832b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # X 交流学习
@@ -113,7 +93,5 @@ Flink常见的监控方式
 ![](https://upload-images.jianshu.io/upload_images/16782311-11d3533436ffbbdf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## [博客](http://www.shishusheng.com)
-
-![](https://upload-images.jianshu.io/upload_images/16782311-b4ec7ff8790e19a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## [Github](https://github.com/Wasabi1234)
