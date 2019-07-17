@@ -1,4 +1,4 @@
-# 0 Flink 从入门到实战 - Scala版本
+# Flink 从入门到实战 - Scala/Java双语言版本
 
 # 1 核心知识点
 ![](https://upload-images.jianshu.io/upload_images/16782311-dc4156dc0a34d557.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -79,19 +79,11 @@ Flink常见的监控方式
 
 常见的Flink调优策略
 
-# 2 实战项目：基于Flink的互联网直播平台日志分析
-#### 互联网直播平台日志分析（以Scala语言开发）
-![](https://upload-images.jianshu.io/upload_images/16782311-ff3bd3a8d89089ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-# 3 以下知名公司都在使用Flink
+# 2 以下知名公司都在使用Flink
 ![](https://upload-images.jianshu.io/upload_images/16782311-9447a7c96178832b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # X 交流学习
 ![](https://upload-images.jianshu.io/upload_images/16782311-8d7acde57fdce062.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ## [Java交流群](https://jq.qq.com/?_wv=1027&k=5UB4P1T)
-![](https://upload-images.jianshu.io/upload_images/16782311-11d3533436ffbbdf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ## [博客](http://www.shishusheng.com)
-
 ## [Github](https://github.com/Wasabi1234)
