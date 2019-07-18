@@ -36,7 +36,7 @@ public class DataSetTransformationApp {
         List<String> info1 = new ArrayList<>();
         info1.add("曼联");
         info1.add("曼城");
-        
+
         List<String> info2 = new ArrayList<>();
         info2.add("3");
         info2.add("1");
