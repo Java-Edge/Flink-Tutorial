@@ -30,6 +30,7 @@
 		<flink.version>1.8.0</flink.version>
 		<scala.binary.version>2.11</scala.binary.version>
 		<scala.version>2.11.12</scala.version>
+		<hadoop.version>2.6.0</hadoop.version>
 	</properties>
 
 	<dependencies>
@@ -105,6 +106,37 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.8</version>
 		</dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-filesystem_2.11</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-connector-kafka_2.11</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-connector-kafka_2.11</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>org.apache.flink</groupId>-->
+<!--			<artifactId>flink-avro</artifactId>-->
+<!--			<version>${flink.version}</version>-->
+<!--		</dependency>-->
+
 	</dependencies>
 
 	<build>
