@@ -30,7 +30,7 @@
 		<flink.version>1.8.0</flink.version>
 		<scala.binary.version>2.11</scala.binary.version>
 		<scala.version>2.11.12</scala.version>
-		<hadoop.version>2.6.0</hadoop.version>
+		<hadoop.version>2.7.0</hadoop.version>
 	</properties>
 
 	<dependencies>
