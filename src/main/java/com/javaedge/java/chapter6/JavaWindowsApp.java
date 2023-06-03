@@ -9,25 +9,24 @@ import org.apache.flink.util.Collector;
 
 /**
  * @author JavaEdge
- *
  * @date 2019-07-23
  */
 public class JavaWindowsApp {
 
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        DataStreamSource<String> text = env.socketTextStream("localhost",9999);
-        text.flatMap(new FlatMapFunction<String, Tuple2<String,Integer>>() {
-            @Override
-            public void flatMap(String value, Collector<Tuple2<String, Integer>> out) throws Exception {
-                String[] tokens = value.toLowerCase().split(",");
-                for(String token : tokens) {
-                    if(token.length() > 0) {
-                        out.collect(new Tuple2<>(token, 1));
+        DataStreamSource<String> text = env.socketTextStream("localhost", 9999);
+        text.flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
+                    @Override
+                    public void flatMap(String value, Collector<Tuple2<String, Integer>> out) throws Exception {
+                        String[] tokens = value.toLowerCase().split(",");
+                        for (String token : tokens) {
+                            if (token.length() > 0) {
+                                out.collect(new Tuple2<>(token, 1));
+                            }
+                        }
                     }
-                }
-            }
-        }).keyBy(0)
+                }).keyBy(0)
                 .timeWindow(Time.seconds(5))
                 .sum(1)
                 .print()

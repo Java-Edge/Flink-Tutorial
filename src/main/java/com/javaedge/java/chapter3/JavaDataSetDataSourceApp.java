@@ -14,12 +14,12 @@ public class JavaDataSetDataSourceApp {
 
     public static void main(String[] args) throws Exception {
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-//        fromCollection(env);
+        fromCollection(env);
         textFile(env);
     }
 
     public static void textFile(ExecutionEnvironment env) throws Exception {
-        String filePath = "file:///Volumes/doc/data/data.txt";
+        String filePath = "file:///Volumes/Download/data/data.txt";
         env.readTextFile(filePath).print();
         System.out.println("===========~这是一个分割线~============");
 

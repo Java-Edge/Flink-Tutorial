@@ -13,8 +13,8 @@ public class JavaDataStreamSourceApp {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
 //      socketFunction(env);
-//      nonParallelSourceFunction(env);
-        parallelSourceFunction(env);
+      nonParallelSourceFunction(env);
+//        parallelSourceFunction(env);
 
         env.execute("JavaDataStreamSourceApp");
     }

@@ -22,7 +22,7 @@ public class JavaTableSQLAPI {
 
         DataSet<Sales> csv = env.readCsvFile(filePath)
                 .ignoreFirstLine()
-                .pojoType(Sales.class,"transactionId","customerId","itemId","amountPaid");
+                .pojoType(Sales.class, "transactionId", "customerId", "itemId", "amountPaid");
         //csv.print();
 
         Table sales = tableEnv.fromDataSet(csv);
@@ -33,11 +33,11 @@ public class JavaTableSQLAPI {
         result.print();
     }
 
-    public static class Sales{
+    public static class Sales {
         public String transactionId;
         public String customerId;
         public String itemId;
-        public Double  amountPaid;
+        public Double amountPaid;
     }
 }
 

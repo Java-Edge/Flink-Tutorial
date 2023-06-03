@@ -17,9 +17,9 @@ import java.util.List;
 public class JavaDataStreamTransformationApp {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-//      filterFunction(env);
+      filterFunction(env);
 //      unionFunction(env);
-        splitSelectFunction(env);
+//        splitSelectFunction(env);
         env.execute("JavaDataStreamTransformationApp");
     }
 
