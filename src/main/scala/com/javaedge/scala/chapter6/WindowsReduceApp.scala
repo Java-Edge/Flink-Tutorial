@@ -3,11 +3,7 @@ package com.javaedge.scala.chapter6
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.api.scala._
-/**
-  * @author JavaEdge
-  *
-  * @date 2019-07-23
-  */
+
 object WindowsReduceApp {
 
   def main(args: Array[String]): Unit = {
@@ -29,6 +25,3 @@ object WindowsReduceApp {
     env.execute("WindowsReduceApp")
   }
 }
-
-
-

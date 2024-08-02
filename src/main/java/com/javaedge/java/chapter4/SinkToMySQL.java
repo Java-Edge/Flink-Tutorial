@@ -7,12 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-/**
- * @author JavaEdge
- *
- * @date 2019-07-21
- */
-public class SinkToMySQL extends RichSinkFunction<Student>{
+public class SinkToMySQL extends RichSinkFunction<Student> {
 
     Connection connection;
     PreparedStatement pstmt;
@@ -25,7 +20,7 @@ public class SinkToMySQL extends RichSinkFunction<Student>{
 
             String url = "jdbc:mysql://localhost:3306/javaedge_flink";
 
-            conn = DriverManager.getConnection(url,"root","root");
+            conn = DriverManager.getConnection(url, "root", "123456");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -36,6 +31,7 @@ public class SinkToMySQL extends RichSinkFunction<Student>{
 
     /**
      * 在open方法中建立connection
+     *
      * @param parameters
      * @throws Exception
      */
@@ -73,17 +69,18 @@ public class SinkToMySQL extends RichSinkFunction<Student>{
 
     /**
      * 在close方法中要释放资源
+     *
      * @throws Exception
      */
     @Override
     public void close() throws Exception {
         super.close();
 
-        if(pstmt != null) {
+        if (pstmt != null) {
             pstmt.close();
         }
 
-        if(connection != null) {
+        if (connection != null) {
             connection.close();
         }
     }

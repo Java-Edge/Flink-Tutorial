@@ -1,7 +1,7 @@
 package com.javaedge.java.chapter3;
 
 /**
- * @author sss
+ * @author JavaEdge
  * @date 2019-07-18
  */
 

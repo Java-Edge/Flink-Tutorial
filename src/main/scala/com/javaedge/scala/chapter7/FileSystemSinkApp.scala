@@ -4,10 +4,6 @@ import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.streaming.connectors.fs.StringWriter
 import org.apache.flink.streaming.connectors.fs.bucketing.{BucketingSink, DateTimeBucketer}
 
-/**
-  * @author JavaEdge
-  * @date 2019-07-23
-  */
 object FileSystemSinkApp {
 
   def main(args: Array[String]): Unit = {

@@ -3,7 +3,7 @@ package com.javaedge.scala.chapter3
 import scala.util.Random
 
 /**
-  * @author sss
+  * @author JavaEdge
   * @date 2019-07-17
   *
   */

@@ -10,11 +10,6 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
 
-/**
- * @author JavaEdge
- *
- * @date 2019-07-23
- */
 public class JavaWindowsProcessApp {
 
     public static void main(String[] args) throws Exception {
@@ -22,16 +17,16 @@ public class JavaWindowsProcessApp {
         DataStreamSource<String> text = env.socketTextStream("localhost", 9999);
 
         text.flatMap(new FlatMapFunction<String, Tuple2<Integer, Integer>>() {
-            @Override
-            public void flatMap(String value, Collector<Tuple2<Integer, Integer>> out) throws Exception {
-                String[] tokens = value.toLowerCase().split(",");
-                for (String token : tokens) {
-                    if (token.length() > 0) {
-                        out.collect(new Tuple2<>(1, Integer.parseInt(token)));
+                    @Override
+                    public void flatMap(String value, Collector<Tuple2<Integer, Integer>> out) throws Exception {
+                        String[] tokens = value.toLowerCase().split(",");
+                        for (String token : tokens) {
+                            if (token.length() > 0) {
+                                out.collect(new Tuple2<>(1, Integer.parseInt(token)));
+                            }
+                        }
                     }
-                }
-            }
-        }).keyBy(0)
+                }).keyBy(0)
                 .timeWindow(Time.seconds(5))
                 .process(new ProcessWindowFunction<Tuple2<Integer, Integer>, Object, Tuple, TimeWindow>() {
                     @Override
